@@ -1,23 +1,21 @@
-let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
 
-// Function to show the current slide
 function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[index].classList.add('active');
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    dots[i].classList.toggle('active', i === index);
+  });
 }
 
-// Function to go to the next slide
 function nextSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
 }
 
-// Function to go to the previous slide
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
+// Initial display
+showSlide(currentSlide);
 
-// Automatically change slides every 7 seconds
-setInterval(nextSlide, 7000);
+// Auto slide every 4 seconds
+setInterval(nextSlide, 4000);
