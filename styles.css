@@ -56,9 +56,9 @@ nav.main-menu ul li a:hover {
 }
 
 .carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover !important;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .slide .hero-text1, .slide .hero-text2, .slide .hero-text3, .slide .hero-text4 {
