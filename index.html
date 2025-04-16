@@ -3,32 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>4-Page Slideshow</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="slideshow-container">
-    <div class="slide active" id="slide1">
-      <h1>Welcome to the Slideshow</h1>
-      <p>Your tagline or subtitle here</p>
+  <header>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carousel">
+      <div class="slide" id="slide-2">
+        <img src="landing1.jpg" alt="Slide 2" />
+        <div class="hero-text1">BLITZHUB GH</div>
+      </div>
+      <div class="slide" id="slide-4">
+        <img src="landing6.jpg" alt="Slide 4" />
+        <div class="hero-text3">From Ghana, With Love ❤️</div>
+      </div>
+      <div class="slide" id="slide-3">
+        <img src="landing10.jpg" alt="Slide 3" />
+        <div class="hero-text2">Truly Ghanaian.</div>
+      </div>
+      <div class="slide" id="slide-5">
+        <img src="landing5.jpg" alt="Slide 5" />
+        <div class="hero-text4">Culture</div>
+      </div>
+
+      <div class="indicators">
+        <div class="dot" onclick="currentSlide(0)"></div>
+        <div class="dot" onclick="currentSlide(1)"></div>
+        <div class="dot" onclick="currentSlide(2)"></div>
+        <div class="dot" onclick="currentSlide(3)"></div>
+      </div>
     </div>
-    <div class="slide" id="slide2">
-      <h1>Content Slide 1</h1>
-      <p>Key points and brief text here</p>
-    </div>
-    <div class="slide" id="slide3">
-      <h1>Content Slide 2</h1>
-      <p>Graphs, charts, or infographics go here</p>
-    </div>
-    <div class="slide" id="slide4">
-      <h1>Thank You!</h1>
-      <p>Call-to-Action or contact info here</p>
-    </div>
-    <div class="controls">
-      <button onclick="prevSlide()">Previous</button>
-      <button onclick="nextSlide()">Next</button>
-    </div>
-  </div>
+
+    <section class="heritage-section">
+      <div class="heritage-text">
+        <h2>👋 Akwaaba! Welcome to BlitzHub</h2>
+        <p>
+          You’ve just stepped into the colorful world of Kente — bold, beautiful, and deeply Ghanaian.
+        </p>
+      </div>
+      <div class="heritage-image">
+        <img src="landing3.jpg" alt="Kente Fabric" />
+      </div>
+    </section>
+
+    <section class="heritage-details">
+      <div class="heritage-text">
+        <h2>What’s Kente, and Why Should You Care?</h2>
+        <p>
+          Kente isn’t just fabric — it’s a statement. Woven with centuries of tradition, Kente tells stories. Every pattern, every color has meaning — strength, love, royalty, unity, purpose.
+        </p>
+      </div>
+      <div class="heritage-image1">
+        <img src="kent.jpg" alt="Kente Fabric" />
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>✨ So... Why Order Now?</h2>
+      <p>
+        Because culture looks good on you. Whether you're stepping into a wedding, gifting something special, or just want to turn heads at your next event — Kente makes a statement before you even say a word.
+      </p>
+      <a href="order.html" class="order-button">Click here to order</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 BlitzHub GH. All rights reserved.</p>
+  </footer>
   <script src="scripts.js"></script>
 </body>
 </html>
