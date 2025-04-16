@@ -42,9 +42,11 @@ nav.main-menu ul li a:hover {
 /* Carousel */
 .carousel {
   position: relative;
+  display: flex;
   width: 100vw;
   height: 60vh;
-  overflow: hidden;
+  overflow: autp;
+  min-width: 720px;
 }
 
 .slide {
@@ -56,9 +58,11 @@ nav.main-menu ul li a:hover {
 }
 
 .carousel img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  object-position: center; 
 }
 
 .slide .hero-text1, .slide .hero-text2, .slide .hero-text3, .slide .hero-text4 {
