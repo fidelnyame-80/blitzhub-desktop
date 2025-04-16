@@ -55,10 +55,10 @@ nav.main-menu ul li a:hover {
   text-align: center;
 }
 
-.slide img {
+.carousel img {
   width: 100%;
-  height: auto;
-  object-fit: contain !important;
+  height: 100%;
+  object-fit: cover !important;
 }
 
 .slide .hero-text1, .slide .hero-text2, .slide .hero-text3, .slide .hero-text4 {
